@@ -20,15 +20,15 @@ export default function Home() {
                 <h3 className="text-center ff-playfair font-bold text-3xl md:text-[40px]">Featured Collections</h3>
 
                 <div class="flex flex-col md:flex-row space-y-5 md:justify-around items-center mt-15 mb-15">
-                    <div>
+                    <div className="w-80 md:w-fit">
                         <img src="/fc_sofa.png" className="h-120 rounded-lg hover:scale-101 duration-200 object-cover" alt="sofa" />
                     </div>
 
-                    <div>
+                    <div className="w-80 md:w-fit">
                         <img src="/fc_room.png" className="h-120 rounded-lg hover:scale-101 duration-200 object-cover" alt="room" />
                     </div>
 
-                    <div>
+                    <div className="w-80 md:w-fit">
                         <img src="/fc_dinning.png" className="h-120 rounded-lg hover:scale-101 duration-200 object-cover" alt="dinning table" />
                     </div>
                 </div>
@@ -70,15 +70,15 @@ export default function Home() {
                 <h3 className="text-center ff-playfair font-bold text-3xl md:text-[40px] mt-15 mb-15">Design Inspiration</h3>
 
                 <div className="flex flex-col md:flex-row justify-around">
-                    <div className="mx-auto md:mx-0 my-5 md:my-0">
+                    <div className="mx-auto md:mx-0 my-5 md:my-0 w-80 md:w-fit">
                         <img src="/di-room.png" className="h-100 rounded-lg hover:scale-101 duration-200 object-cover" alt="sofa" />
                     </div>
 
-                    <div className="mx-auto md:mx-0 my-5 md:my-0">
+                    <div className="mx-auto md:mx-0 my-5 md:my-0 w-80 md:w-fit">
                         <img src="/di-bedroom.png" className="h-100 rounded-lg hover:scale-101 duration-200 object-cover" alt="room" />
                     </div>
 
-                    <div className="mx-auto md:mx-0 my-5 md:my-0">
+                    <div className="mx-auto md:mx-0 my-5 md:my-0 w-80 md:w-fit">
                         <img src="/di-dinning.png" className="h-100 rounded-lg hover:scale-101 duration-200 object-cover" alt="dinning table" />
                     </div>
                 </div>
@@ -158,7 +158,7 @@ export default function Home() {
                 </p>
 
                 <form action="" className="mb-15 ff-roboto">
-                    <input type="text" placeholder="Enter your email" className="w-70 md:w-100 px-3 py-2 border border-gray-200 focus:outline-gray-300 bg-white mr-2" />
+                    <input type="text" placeholder="Enter your email" className="w-50 md:w-100 px-3 py-2 border border-gray-200 focus:outline-gray-300 bg-white mr-2" />
                     <button className="bg-black text-white px-8 py-2 hover:cursor-pointer">Subscribe</button>
                 </form>
             </div>
