@@ -8,8 +8,11 @@ export default function Home() {
             <Header />
 
             <div class="w-full bg-[url(/home-banner.png)] h-100 md:h-250 bg-cover bg-no-repeat flex flex-col justify-center bg-black-900">
-                <h2 className="ff-playfair text-4xl md:text-7xl text-white font-medium text-center">Transform Your Space,</h2>
-                <h2 className="ff-playfair text-4xl md:text-7xl text-white font-medium text-center">Elevate Your Lifestyle</h2>
+                <h2 className="ff-playfair text-2xl md:text-7xl text-white font-medium text-center">
+                    Transform Your Space,
+                    <br />
+                    Elevate Your Lifestyle
+                </h2>
                 <button className="ff-roboto w-fit mx-auto py-3 px-5 mt-5 rounded-sm bg-black text-white hover:bg-gray-800 hover:cursor-pointer text-md md:text-lg">View Collections</button>
             </div>
 
@@ -155,12 +158,12 @@ export default function Home() {
                 </p>
 
                 <form action="" className="mb-15 ff-roboto">
-                    <input type="text" placeholder="Enter your email" className="w-70 md:w-100 px-3 py-2 border border-gray-200 focus:outline-gray-300 bg-white mr-2"/>
+                    <input type="text" placeholder="Enter your email" className="w-70 md:w-100 px-3 py-2 border border-gray-200 focus:outline-gray-300 bg-white mr-2" />
                     <button className="bg-black text-white px-8 py-2 hover:cursor-pointer">Subscribe</button>
                 </form>
             </div>
 
-            <Footer/>
+            <Footer />
         </>
     )
 }

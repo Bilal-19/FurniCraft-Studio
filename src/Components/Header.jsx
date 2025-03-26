@@ -8,7 +8,7 @@ export default function Header() {
         <nav className="bg-white text-gray-900 shadow-sm">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="..." className="h-8" alt="Iron Pulse Logo" />
+                    <img src="/header_logo.png" className="h-fit" alt="FurniCraft Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                         FurniCraft Studio
                     </span>
@@ -29,34 +29,34 @@ export default function Header() {
 
                 {/* Navigation Menu */}
                 <div className={`w-full md:block md:w-auto ${isOpen ? "block" : "hidden"}`} id="navbar-default">
-                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                    <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white font-normal ff-roboto text-[#374151]">
                         <li>
-                            <NavLink to="/" className="block py-2 px-3 font-normal hover:underline underline-offset-4 text-[#374151] ff-roboto">
+                            <NavLink to="/" className="block py-2 px-3 hover:underline underline-offset-4">
                                 Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/" className="block py-2 px-3 font-normal hover:underline underline-offset-4 text-[#374151] ff-roboto">
+                            <NavLink to="/" className="block py-2 px-3 hover:underline underline-offset-4">
                                 About Us
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/" className="block py-2 px-3 font-normal hover:underline underline-offset-4 text-[#374151] ff-roboto">
+                            <NavLink to="/" className="block py-2 px-3 hover:underline underline-offset-4">
                                 Services
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/" className="block py-2 px-3 font-normal hover:underline underline-offset-4 text-[#374151] ff-roboto">
+                            <NavLink to="/" className="block py-2 px-3 hover:underline underline-offset-4">
                                 Products
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/" className="block py-2 px-3 font-normal hover:underline underline-offset-4 text-[#374151] ff-roboto">
+                            <NavLink to="/" className="block py-2 px-3 hover:underline underline-offset-4">
                                 Testimonials
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/" className="block py-2 px-3 font-normal hover:underline underline-offset-4 text-[#374151] ff-roboto">
+                            <NavLink to="/" className="block py-2 px-3 hover:underline underline-offset-4">
                                 Contact Us
                             </NavLink>
                         </li>
