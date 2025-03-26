@@ -6,7 +6,7 @@ export default function Footer() {
             <div class="w-full bg-[#111827] pt-10 pb-10">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div className="m-5 md:m-10">
-                        <img src=".." alt="logo" />
+                        <img src="/footer_logo.png" alt="logo" />
                         <p className="text-[#9CA3AF]">
                             Transforming spaces with exceptional
                             design and quality furniture since 2010.

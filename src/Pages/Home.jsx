@@ -7,17 +7,21 @@ export default function Home() {
         <>
             <Header />
 
-            <div class="w-full bg-[url(/home-banner.png)] h-100 md:h-250 bg-cover bg-no-repeat flex flex-col justify-center bg-black-900">
-                <h2 className="ff-playfair text-2xl md:text-7xl text-white font-medium text-center">
+            <div class="relative w-full bg-[url(/home-banner.jpg)] h-100 md:h-250 bg-cover bg-no-repeat flex flex-col justify-center text-white">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <h2 className="relative ff-playfair text-2xl md:text-7xl font-medium text-center">
                     Transform Your Space,
                     <br />
                     Elevate Your Lifestyle
                 </h2>
-                <button className="ff-roboto w-fit mx-auto py-3 px-5 mt-5 rounded-sm bg-black text-white hover:bg-gray-800 hover:cursor-pointer text-md md:text-lg">View Collections</button>
+                <button
+                    className="relative ff-roboto w-fit mx-auto py-3 px-5 mt-5 rounded-sm bg-black hover:bg-gray-800 hover:cursor-pointer text-md md:text-lg">
+                    View Collections
+                </button>
             </div>
 
             <div class="container-fluid bg-[#efefef] pt-10 pb-10 md:pt-15 md:pb-15">
-                <h3 className="text-center ff-playfair font-bold text-3xl md:text-[40px]">Featured Collections</h3>
+                <h3 className="text-center ff-playfair font-bold text-xl md:text-[40px]">Featured Collections</h3>
 
                 <div class="flex flex-col md:flex-row space-y-5 md:justify-around items-center mt-15 mb-15">
                     <div className="w-80 md:w-fit">
@@ -35,7 +39,7 @@ export default function Home() {
             </div>
 
             <div class="container-fluid pt-10 pb-10 md:pt-15 md:pb-15">
-                <h3 className="text-center ff-playfair font-bold text-3xl md:text-[40px] mt-15 mb-15">Trending Designs</h3>
+                <h3 className="text-center ff-playfair font-bold text-xl md:text-[40px] mt-15 mb-15">Trending Designs</h3>
 
                 <div className="container mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -67,7 +71,7 @@ export default function Home() {
             </div>
 
             <div class="container-fluid bg-[#efefef] pt-10 pb-10 md:pt-15 md:pb-15">
-                <h3 className="text-center ff-playfair font-bold text-3xl md:text-[40px] mt-15 mb-15">Design Inspiration</h3>
+                <h3 className="text-center ff-playfair font-bold text-xl md:text-[40px] mt-15 mb-15">Design Inspiration</h3>
 
                 <div className="flex flex-col md:flex-row justify-around">
                     <div className="mx-auto md:mx-0 my-5 md:my-0 w-80 md:w-fit">
@@ -152,7 +156,7 @@ export default function Home() {
             </div>
 
             <div className="bg-[#efefef] flex flex-col items-center">
-                <h3 className="text-center ff-playfair font-bold text-2xl md:text-4xl mt-15 mb-5">Join Our Design Community</h3>
+                <h3 className="text-center ff-playfair font-bold text-xl md:text-4xl mt-15 mb-5">Join Our Design Community</h3>
                 <p className="text-[#4B5563] ff-roboto mb-5 w-80 md:w-fit">
                     Subscribe to receive exclusive offers, design tips, and inspiration for your home.
                 </p>
