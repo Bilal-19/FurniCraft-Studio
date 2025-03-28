@@ -93,7 +93,7 @@ export default function Home() {
                 <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px]">What Our Customers Say</h3>
 
                     <div className="w-full flex flex-col md:flex-row mt-10">
-                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-10 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
+                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
                             <div className="flex">
                                 <img src="/sarah.png" alt="" />
                                 <div className="ml-2">
@@ -113,7 +113,7 @@ export default function Home() {
                         </div>
 
 
-                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-10 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
+                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
                             <div className="flex">
                                 <img src="/sarah.png" alt="" />
                                 <div className="ml-2">
@@ -132,7 +132,7 @@ export default function Home() {
                                 incredibly helpful in creating my perfect living space."</p>
                         </div>
 
-                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-10 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
+                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
                             <div className="flex">
                                 <img src="/sarah.png" alt="" />
                                 <div className="ml-2">

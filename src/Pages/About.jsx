@@ -103,7 +103,7 @@ export default function About() {
                 <h3 className="text-lg md:text-3xl ff-roboto font-bold text-center">Meet Our Team</h3>
 
                 <div className="w-full flex flex-col md:flex-row">
-                    <div className="w-80 md:w-1/3 p-5 ff-roboto mx-auto md:mx-0">
+                    <div className="w-90 md:w-1/3 p-5 ff-roboto mx-auto md:mx-0">
                         <img src="/SarahJohnson.png" alt="Sarah Johnson profile" className="rounded mb-3" />
                         <div className="p-2">
                             <h5 className="font-semibold md:text-xl mb-2">Sarah Johnson</h5>
@@ -116,7 +116,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="w-80 md:w-1/3 p-5 ff-roboto mx-auto md:mx-0">
+                    <div className="w-90 md:w-1/3 p-5 ff-roboto mx-auto md:mx-0">
                         <img src="/Michael.png" alt="Michael profile" className="rounded mb-3" />
                         <div className="p-2">
                             <h5 className="font-semibold md:text-xl mb-2">Michael Chen</h5>
@@ -129,7 +129,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="w-80 md:w-1/3 p-5 ff-roboto mx-auto md:mx-0">
+                    <div className="w-90 md:w-1/3 p-5 ff-roboto mx-auto md:mx-0">
                         <img src="/Emma.png" alt="Emma profile" className="rounded mb-3" />
                         <div className="p-2">
                             <h5 className="font-semibold md:text-xl mb-2">Emma Roberts</h5>
