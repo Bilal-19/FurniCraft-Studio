@@ -7,8 +7,8 @@ export default function Home() {
         <>
             <Header />
 
-            <div class="relative w-full bg-[url(/home-banner.jpg)] h-100 md:h-250 bg-cover bg-no-repeat flex flex-col justify-center text-white">
-                <div class="absolute inset-0 bg-black/40"></div>
+            <div className="relative w-full bg-[url(/home-banner.jpg)] h-100 md:h-250 bg-cover bg-no-repeat flex flex-col justify-center text-white">
+                <div className="absolute inset-0 bg-black/40"></div>
                 <h2 className="relative ff-playfair text-2xl md:text-7xl font-medium text-center">
                     Transform Your Space,
                     <br />
@@ -20,10 +20,10 @@ export default function Home() {
                 </button>
             </div>
 
-            <div class="container-fluid bg-[#efefef] pt-10 pb-10 md:pt-15 md:pb-15">
-                <h3 className="text-center ff-playfair font-bold text-xl md:text-[40px]">Featured Collections</h3>
+            <div className="container-fluid bg-[#efefef] pt-10 pb-10 md:pt-15 md:pb-15">
+                <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px]">Featured Collections</h3>
 
-                <div class="flex flex-col md:flex-row space-y-5 md:justify-around items-center mt-15 mb-15">
+                <div className="flex flex-col md:flex-row space-y-5 md:justify-around items-center mt-15 mb-15">
                     <div className="w-80 md:w-fit">
                         <img src="/fc_sofa.png" className="h-120 rounded-lg hover:scale-101 duration-200 object-cover" alt="sofa" />
                     </div>
@@ -38,11 +38,11 @@ export default function Home() {
                 </div>
             </div>
 
-            <div class="container-fluid pt-10 pb-10 md:pt-15 md:pb-15">
-                <h3 className="text-center ff-playfair font-bold text-xl md:text-[40px] mt-15 mb-15">Trending Designs</h3>
+            <div className="container-fluid pt-10 pb-10 md:pt-15 md:pb-15">
+                <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px] mt-15 mb-15">Trending Designs</h3>
 
                 <div className="container mx-auto">
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         <div className="mx-auto md:mx-0">
                             <img src="/velvet-chair.png" className="rounded-lg" alt="velvet-chair" />
                             <p className="font-medium md:text-lg ff-roboto mt-3 mb-3">Velvet Accent Chair</p>
@@ -70,8 +70,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <div class="container-fluid bg-[#efefef] pt-10 pb-10 md:pt-15 md:pb-15">
-                <h3 className="text-center ff-playfair font-bold text-xl md:text-[40px] mt-15 mb-15">Design Inspiration</h3>
+            <div className="container-fluid bg-[#efefef] pt-10 pb-10 md:pt-15 md:pb-15">
+                <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px] mt-15 mb-15">Design Inspiration</h3>
 
                 <div className="flex flex-col md:flex-row justify-around">
                     <div className="mx-auto md:mx-0 my-5 md:my-0 w-80 md:w-fit">
@@ -89,12 +89,11 @@ export default function Home() {
             </div>
 
 
-            <div class="w-full bg-[#F9FAFB] pt-10 pb-10 md:pt-15 md:pb-15">
-                <h3 className="text-center ff-playfair font-bold text-3xl md:text-[40px]">What Our Customers Say</h3>
+            <div className="w-full bg-[#F9FAFB] pt-10 pb-10 md:pt-15 md:pb-15">
+                <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px]">What Our Customers Say</h3>
 
-                <div class="container mx-auto mt-15 mb-15">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-                        <div className="bg-white border border-gray-200 mx-10 md:mx-0 px-5 py-3 rounded-lg shadow">
+                    <div className="w-full flex flex-col md:flex-row mt-10">
+                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-10 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
                             <div className="flex">
                                 <img src="/sarah.png" alt="" />
                                 <div className="ml-2">
@@ -114,7 +113,7 @@ export default function Home() {
                         </div>
 
 
-                        <div className="bg-white border border-gray-200 mx-10 md:mx-0 px-5 py-3 rounded-lg shadow">
+                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-10 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
                             <div className="flex">
                                 <img src="/sarah.png" alt="" />
                                 <div className="ml-2">
@@ -133,7 +132,7 @@ export default function Home() {
                                 incredibly helpful in creating my perfect living space."</p>
                         </div>
 
-                        <div className="bg-white border border-gray-200 mx-10 md:mx-0 px-5 py-3 rounded-lg shadow">
+                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-10 mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
                             <div className="flex">
                                 <img src="/sarah.png" alt="" />
                                 <div className="ml-2">
@@ -150,7 +149,6 @@ export default function Home() {
                             <p className="ff-roboto text-[#4B5563] mt-5">"The quality of furniture and attention to detail
                                 exceeded my expectations. The design team was
                                 incredibly helpful in creating my perfect living space."</p>
-                        </div>
                     </div>
                 </div>
             </div>
