@@ -46,7 +46,7 @@ export default function Header() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/" className="block py-2 hover:underline underline-offset-4">
+                            <NavLink to="/products" className="block py-2 hover:underline underline-offset-4">
                                 Products
                             </NavLink>
                         </li>
