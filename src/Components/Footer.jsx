@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -16,18 +17,18 @@ export default function Footer() {
 
                     <div className="w-80 md:w-1/5 text-white space-y-1 m-2 md:m-5">
                         <h5 className="font-medium text-lg">Contact</h5>
-                        <p className="text-[#9CA3AF]">923427634247</p>
-                        <p className="text-[#9CA3AF]">info@furnicraftstudio.com</p>
+                        <p className="text-[#9CA3AF]">+92 3082491543</p>
+                        <p className="text-[#9CA3AF]">contact@furnicraft.com</p>
                         <p className="text-[#9CA3AF]">Mon-Fri, 9:00 AM - 6:00 PM</p>
                     </div>
 
-                    <div className="w-80 md:w-1/5 text-white space-y-1 m-2 md:m-5">
+                    <div className="w-80 md:w-1/5 text-white m-2 md:m-5 flex flex-col">
                         <h5 className="font-medium text-lg">Company</h5>
-                        <p className="text-[#9CA3AF]">About Us</p>
-                        <p className="text-[#9CA3AF]">Services</p>
-                        <p className="text-[#9CA3AF]">Products</p>
-                        <p className="text-[#9CA3AF]">Testimonials</p>
-                        <p className="text-[#9CA3AF]">Contact Us</p>
+                        <Link to="/about" className="text-[#9CA3AF]">About</Link>
+                        <Link to="/services" className="text-[#9CA3AF]">Services</Link>
+                        <Link to="/products" className="text-[#9CA3AF]">Products</Link>
+                        <Link to="/testimonials" className="text-[#9CA3AF]">Testimonials</Link>
+                        <Link to="/contact" className="text-[#9CA3AF]">Contact Us</Link>
                     </div>
 
                     <div className="w-80 md:w-1/5 text-white space-y-1 m-2 md:m-5">
