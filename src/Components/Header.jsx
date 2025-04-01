@@ -8,7 +8,7 @@ export default function Header() {
         <nav className="bg-white text-gray-900 shadow-sm">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link to="/">
-                    <img src="/header_logo.png" className="h-fit" alt="FurniCraft Logo" />
+                    <img src="/logo.png" className="h-12 object-contain" alt="FurniCraft Logo" />
                 </Link>
 
                 {/* Toggle Button */}

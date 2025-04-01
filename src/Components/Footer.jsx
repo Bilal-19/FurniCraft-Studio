@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <>
-            <div className="w-full bg-[#111827] pt-10 pb-10">
+            <div className="w-full bg-[#111827] pt-10 pb-10 ff-roboto">
                 <div className="flex flex-col md:flex-row justify-between items-start">
                     <div className="w-80 md:w-2/5 m-2 md:m-5">
                         <img src="/footer_logo.png" alt="logo" />
@@ -34,10 +34,10 @@ export default function Footer() {
                     <div className="w-80 md:w-1/5 text-white space-y-1 m-2 md:m-5">
                         <h5 className="font-medium text-lg">Connect</h5>
                         <div className="space-x-5">
-                            <i className="fa-brands fa-instagram"></i>
-                            <i className="fa-brands fa-pinterest"></i>
-                            <i className="fa-brands fa-facebook"></i>
-                            <i className="fa-brands fa-twitter"></i>
+                            <i className="text-[#9CA3AF] fa-brands fa-instagram"></i>
+                            <i className="text-[#9CA3AF] fa-brands fa-pinterest"></i>
+                            <i className="text-[#9CA3AF] fa-brands fa-facebook"></i>
+                            <i className="text-[#9CA3AF] fa-brands fa-twitter"></i>
                         </div>
                     </div>
                 </div>

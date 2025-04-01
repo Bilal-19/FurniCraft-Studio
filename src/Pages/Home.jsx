@@ -92,63 +92,67 @@ export default function Home() {
             <div className="w-full bg-[#F9FAFB] pt-10 pb-10 md:pt-15 md:pb-15">
                 <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px]">What Our Customers Say</h3>
 
-                    <div className="w-full flex flex-col md:flex-row mt-10">
-                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
-                            <div className="flex">
-                                <img src="/sarah.png" alt="" />
-                                <div className="ml-2">
-                                    <p className="ff-roboto font-medium">Sarah Johnson</p>
-                                    <p>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    </p>
-                                </div>
+                <div className="w-full flex flex-col md:flex-row mt-10">
+                    <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
+                        <div className="flex">
+                            <img src="/sarah.png" alt="" />
+                            <div className="ml-2">
+                                <p className="ff-roboto font-medium">Sarah Johnson</p>
+                                <p>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                </p>
                             </div>
-                            <p className="ff-roboto text-[#4B5563] mt-5">"The quality of furniture and attention to detail
-                                exceeded my expectations. The design team was
-                                incredibly helpful in creating my perfect living space."</p>
                         </div>
+                        <p className="ff-roboto text-[#4B5563] mt-5">"The quality of furniture and attention to detail
+                            exceeded my expectations. The design team was
+                            incredibly helpful in creating my perfect living space."</p>
+                    </div>
 
 
-                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
-                            <div className="flex">
-                                <img src="/sarah.png" alt="" />
-                                <div className="ml-2">
-                                    <p className="ff-roboto font-medium">Sarah Johnson</p>
-                                    <p>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    </p>
-                                </div>
+                    <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
+                        <div className="flex">
+                            <img src="/michael_profile.png" alt="" />
+                            <div className="ml-2">
+                                <p className="ff-roboto font-medium">Michael Chen</p>
+                                <p>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                </p>
                             </div>
-                            <p className="ff-roboto text-[#4B5563] mt-5">"The quality of furniture and attention to detail
-                                exceeded my expectations. The design team was
-                                incredibly helpful in creating my perfect living space."</p>
                         </div>
+                        <p className="ff-roboto text-[#4B5563] mt-5">
+                            "Exceptional service from start to finish. The furniture
+                            pieces are not only beautiful but also incredibly
+                            comfortable and well-made."
+                        </p>
+                    </div>
 
-                        <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
-                            <div className="flex">
-                                <img src="/sarah.png" alt="" />
-                                <div className="ml-2">
-                                    <p className="ff-roboto font-medium">Sarah Johnson</p>
-                                    <p>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                        <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    </p>
-                                </div>
+                    <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
+                        <div className="flex">
+                            <img src="/emma_profile.png" alt="" />
+                            <div className="ml-2">
+                                <p className="ff-roboto font-medium">Emma Thompson</p>
+                                <p>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                                </p>
                             </div>
-                            <p className="ff-roboto text-[#4B5563] mt-5">"The quality of furniture and attention to detail
-                                exceeded my expectations. The design team was
-                                incredibly helpful in creating my perfect living space."</p>
+                        </div>
+                        <p className="ff-roboto text-[#4B5563] mt-5">
+                            "I'm absolutely in love with my new dining set. The
+                            quality is outstanding, and it perfectly matches the
+                            design aesthetic I was looking for."
+                        </p>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ export default function Contact() {
             <Header />
 
             <div className="relative w-full bg-[url('/contact-banner.png')] bg-cover h-40 md:h-90 flex flex-col items-center justify-center">
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute inset-0 bg-black/40"></div>
                 <h2 className="absolute ff-roboto text-white font-medium text-3xl md:text-5xl">Contact Us</h2>
             </div>
 
@@ -35,27 +35,31 @@ export default function Contact() {
                 </div>
 
                 <div className="w-80 mx-auto md:w-1/2 bg-white border border-gray-200 p-5 rounded-md ff-roboto shadow-md">
-                    <h4 className="font-medium text-xl md:text-3xl">Send Us a Message</h4>
+                    <h4 className="font-medium text-xl md:text-3xl text-center">Send Us a Message</h4>
 
                     <form action="">
-                        <div className="flex flex-col md:w-4/5 my-5">
+                        <div className="flex flex-col md:w-4/5 my-5 mx-auto">
                             <label htmlFor="fname">Full Name *</label>
                             <input type="text" name="fname" id="fname" className="focus:outline-none border border-gray-300 px-3 py-2" placeholder="Enter Your Name" />
                         </div>
 
-                        <div className="flex flex-col md:w-4/5 my-5">
+                        <div className="flex flex-col md:w-4/5 my-5 mx-auto">
                             <label htmlFor="emailAddress">Email Address *</label>
                             <input type="email" name="emailAddress" id="emailAddress" className="focus:outline-none border border-gray-300 px-3 py-2" placeholder="Enter Your Email" />
                         </div>
 
-                        <div className="flex flex-col md:w-4/5 my-5">
+                        <div className="flex flex-col md:w-4/5 my-5 mx-auto">
                             <label htmlFor="phoneNumber">Phone Number *</label>
                             <input type="text" name="phoneNumber" id="phoneNumber" className="focus:outline-none border border-gray-300 px-3 py-2" placeholder="Enter Your Phone Number" />
                         </div>
 
-                        <div className="flex flex-col md:w-4/5 my-5">
+                        <div className="flex flex-col md:w-4/5 my-5 mx-auto">
                             <label htmlFor="message">Message *</label>
                             <textarea name="message" id="message" className="focus:outline-none border border-gray-300 px-3 py-2 resize-none" rows="5" placeholder="How can we help you?"></textarea>
+                        </div>
+
+                        <div className="flex flex-col md:w-4/5 my-5 mx-auto">
+                           <button className="bg-black text-white px-3 py-2 rounded cursor-pointer">Send Message</button>
                         </div>
                     </form>
                 </div>
