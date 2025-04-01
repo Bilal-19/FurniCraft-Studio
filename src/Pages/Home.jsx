@@ -1,19 +1,28 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import { motion } from "framer-motion";
+import FeaturedCollectionCard from "../Components/FeaturedCollectionCard";
+import TrendingDesignCard from "../Components/TrendingDesignCard";
+import DesignInspirationCard from "../Components/DesignInspirationCard";
+import TopCustomerReview from "../Components/TopCustomerReview";
 
 export default function Home() {
     return (
         <>
+
             <Header />
 
             <div className="relative w-full bg-[url(/home-banner.jpg)] h-100 md:h-250 bg-cover bg-no-repeat flex flex-col justify-center text-white">
                 <div className="absolute inset-0 bg-black/40"></div>
-                <h2 className="relative ff-playfair text-2xl md:text-7xl font-medium text-center">
+                <motion.h2 initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }} className="relative ff-playfair text-2xl md:text-7xl font-medium text-center">
                     Transform Your Space,
                     <br />
                     Elevate Your Lifestyle
-                </h2>
+                </motion.h2>
                 <button
                     className="relative ff-roboto w-fit mx-auto py-3 px-5 mt-5 rounded-sm bg-black hover:bg-gray-800 hover:cursor-pointer text-md md:text-lg">
                     View Collections
@@ -21,20 +30,19 @@ export default function Home() {
             </div>
 
             <div className="container-fluid bg-[#efefef] pt-10 pb-10 md:pt-15 md:pb-15">
-                <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px]">Featured Collections</h3>
+                <motion.h3
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="text-center ff-playfair font-bold text-2xl md:text-[40px]">
+                    Featured Collections
+                </motion.h3>
 
-                <div className="flex flex-col md:flex-row space-y-5 md:justify-around items-center mt-15 mb-15">
-                    <div className="w-80 md:w-fit">
-                        <img src="/fc_sofa.png" className="h-120 rounded-lg hover:scale-101 duration-200 object-cover" alt="sofa" />
-                    </div>
-
-                    <div className="w-80 md:w-fit">
-                        <img src="/fc_room.png" className="h-120 rounded-lg hover:scale-101 duration-200 object-cover" alt="room" />
-                    </div>
-
-                    <div className="w-80 md:w-fit">
-                        <img src="/fc_dinning.png" className="h-120 rounded-lg hover:scale-101 duration-200 object-cover" alt="dinning table" />
-                    </div>
+                <div className="flex flex-col md:flex-row md:justify-around items-center mt-15 mb-15">
+                    <FeaturedCollectionCard imagePath="/fc_sofa.png" altText="Sofa" initialBottomVal={50} />
+                    <FeaturedCollectionCard imagePath="/fc_room.png" altText="Sofa" initialBottomVal={100} />
+                    <FeaturedCollectionCard imagePath="/fc_dinning.png" altText="Sofa" initialBottomVal={150} />
                 </div>
             </div>
 
@@ -43,29 +51,10 @@ export default function Home() {
 
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div className="mx-auto md:mx-0">
-                            <img src="/velvet-chair.png" className="rounded-lg" alt="velvet-chair" />
-                            <p className="font-medium md:text-lg ff-roboto mt-3 mb-3">Velvet Accent Chair</p>
-                            <p className="font-semibold ff-roboto">$899</p>
-                        </div>
-
-                        <div className="mx-auto md:mx-0">
-                            <img src="/marble-dinning-table.png" className="rounded-lg" alt="marble-dinning-table" />
-                            <p className="font-medium md:text-lg ff-roboto mt-3 mb-3">Marble Dining Table</p>
-                            <p className="font-semibold ff-roboto">$2,499</p>
-                        </div>
-
-                        <div className="mx-auto md:mx-0">
-                            <img src="/pendant-light.png" className="rounded-lg" alt="pendant-light" />
-                            <p className="font-medium md:text-lg ff-roboto mt-3 mb-3">Modern Pendant Light</p>
-                            <p className="font-semibold ff-roboto">$599</p>
-                        </div>
-
-                        <div className="mx-auto md:mx-0">
-                            <img src="/bed-frame.png" className="rounded-lg" alt="bed-frame" />
-                            <p className="font-medium md:text-lg ff-roboto mt-3 mb-3">Tufted Bed Frame</p>
-                            <p className="font-semibold ff-roboto">$1,899</p>
-                        </div>
+                        <TrendingDesignCard image="/velvet-chair.png" product_name="Velvet Accent Chair" price="899" />
+                        <TrendingDesignCard image="/marble-dinning-table.png" product_name="Marble Dining Table" price="2,499" />
+                        <TrendingDesignCard image="/pendant-light.png" product_name="Modern Pendant Light" price="599" />
+                        <TrendingDesignCard image="/bed-frame.png" product_name="Tufted Bed Frame" price="1,899" />
                     </div>
                 </div>
             </div>
@@ -74,17 +63,9 @@ export default function Home() {
                 <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px] mt-15 mb-15">Design Inspiration</h3>
 
                 <div className="flex flex-col md:flex-row justify-around">
-                    <div className="mx-auto md:mx-0 my-5 md:my-0 w-80 md:w-fit">
-                        <img src="/di-room.png" className="h-100 rounded-lg hover:scale-101 duration-200 object-cover" alt="sofa" />
-                    </div>
-
-                    <div className="mx-auto md:mx-0 my-5 md:my-0 w-80 md:w-fit">
-                        <img src="/di-bedroom.png" className="h-100 rounded-lg hover:scale-101 duration-200 object-cover" alt="room" />
-                    </div>
-
-                    <div className="mx-auto md:mx-0 my-5 md:my-0 w-80 md:w-fit">
-                        <img src="/di-dinning.png" className="h-100 rounded-lg hover:scale-101 duration-200 object-cover" alt="dinning table" />
-                    </div>
+                    <DesignInspirationCard image="/di-room.png" image_name="room" />
+                    <DesignInspirationCard image="/di-bedroom.png" image_name="bedroom" />
+                    <DesignInspirationCard image="/di-dinning.png" image_name="dinning" />
                 </div>
             </div>
 
@@ -93,67 +74,29 @@ export default function Home() {
                 <h3 className="text-center ff-playfair font-bold text-2xl md:text-[40px]">What Our Customers Say</h3>
 
                 <div className="w-full flex flex-col md:flex-row mt-10">
-                    <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
-                        <div className="flex">
-                            <img src="/sarah.png" alt="" />
-                            <div className="ml-2">
-                                <p className="ff-roboto font-medium">Sarah Johnson</p>
-                                <p>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <p className="ff-roboto text-[#4B5563] mt-5">"The quality of furniture and attention to detail
+                    <TopCustomerReview
+                        customer_profile="/sarah.png"
+                        customer_name="Sarah Johnson"
+                        customer_message="The quality of furniture and attention to detail
                             exceeded my expectations. The design team was
-                            incredibly helpful in creating my perfect living space."</p>
-                    </div>
+                            incredibly helpful in creating my perfect living space."
+                    />
 
-
-                    <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
-                        <div className="flex">
-                            <img src="/michael_profile.png" alt="" />
-                            <div className="ml-2">
-                                <p className="ff-roboto font-medium">Michael Chen</p>
-                                <p>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <p className="ff-roboto text-[#4B5563] mt-5">
-                            "Exceptional service from start to finish. The furniture
+                    <TopCustomerReview
+                        customer_profile="/michael_profile.png"
+                        customer_name="Michael Chen"
+                        customer_message="Exceptional service from start to finish. The furniture
                             pieces are not only beautiful but also incredibly
                             comfortable and well-made."
-                        </p>
-                    </div>
+                    />
 
-                    <div className="w-80 md:w-1/3 bg-white border border-gray-200 mx-auto mb-5 md:mb-0 md:mx-5 px-5 py-3 rounded-lg shadow">
-                        <div className="flex">
-                            <img src="/emma_profile.png" alt="" />
-                            <div className="ml-2">
-                                <p className="ff-roboto font-medium">Emma Thompson</p>
-                                <p>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                    <i className="fa-solid fa-star text-[#FFD43B]"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <p className="ff-roboto text-[#4B5563] mt-5">
-                            "I'm absolutely in love with my new dining set. The
+                    <TopCustomerReview
+                        customer_profile="/emma_profile.png"
+                        customer_name="Emma Thompson"
+                        customer_message="I'm absolutely in love with my new dining set. The
                             quality is outstanding, and it perfectly matches the
                             design aesthetic I was looking for."
-                        </p>
-                    </div>
+                    />
                 </div>
             </div>
 
