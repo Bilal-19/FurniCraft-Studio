@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import ServiceCard from "../Components/ServiceCard";
 
 export default function Services() {
     return (
@@ -18,58 +19,47 @@ export default function Services() {
             </div>
 
             <div class="w-full mt-20 mb-20 grid md:grid-cols-3">
-                <div class="bg-[#ffffff] p-5 border border-gray-200 rounded-lg ff-roboto m-5">
-                    <img src="/custom-furniture-design.png" alt="custom-furniture-design" />
-                    <h5 className="text-xl font-semibold mt-3 mb-3">Custom Furniture Design</h5>
-                    <p className="text-[#4B5563]">
-                        Bespoke furniture pieces crafted to your exact
+                <ServiceCard
+                    service_image="/custom-furniture-design.png"
+                    service_name="Custom Furniture Design"
+                    service_description="Bespoke furniture pieces crafted to your exact
                         specifications, combining aesthetics with
                         functionality to create unique statement pieces for
-                        your space.
-                    </p>
-                </div>
+                        your space."
+                />
 
-                <div class="bg-[#ffffff] p-5 border border-gray-200 rounded-lg ff-roboto m-5">
-                    <img src="/Interior-Design-Consultation.png" alt="Interior-Design-Consultation" />
-                    <h5 className="text-xl font-semibold mt-3 mb-3">Interior Design Consultation</h5>
-                    <p className="text-[#4B5563]">
-                        Expert guidance from our seasoned designers to
+                <ServiceCard
+                    service_image="/Interior-Design-Consultation.png"
+                    service_name="Interior Design Consultation"
+                    service_description="Expert guidance from our seasoned designers to
                         help you create a cohesive and stunning interior that
-                        reflects your personal style.
-                    </p>
-                </div>
+                        reflects your personal style."
+                />
 
-                <div class="bg-[#ffffff] p-5 border border-gray-200 rounded-lg ff-roboto m-5">
-                    <img src="/space-planning.png" alt="space-planning" />
-                    <h5 className="text-xl font-semibold mt-3 mb-3">Space Planning & Renovation</h5>
-                    <p className="text-[#4B5563]">
-                        Comprehensive space transformation services
+                <ServiceCard
+                    service_image="/space-planning.png"
+                    service_name="Space Planning & Renovation"
+                    service_description="Comprehensive space transformation services
                         including layout optimization, renovation planning,
-                        and execution management.
-                    </p>
-                </div>
+                        and execution management."
+                />
 
-                <div class="bg-[#ffffff] p-5 border border-gray-200 rounded-lg ff-roboto m-5">
-                    <img src="/kitchen.png" alt="kitchen" />
-                    <h5 className="text-xl font-semibold mt-3 mb-3">Modular Kitchen & Wardrobes</h5>
-                    <p className="text-[#4B5563]">
-                        Custom storage solutions designed to maximize
+
+                <ServiceCard
+                    service_image="/kitchen.png"
+                    service_name="Modular Kitchen & Wardrobes"
+                    service_description="Custom storage solutions designed to maximize
                         space efficiency while maintaining aesthetic appeal
-                        and functionality.
-                    </p>
-                </div>
+                        and functionality."
+                />
 
-                <div class="bg-[#ffffff] p-5 border border-gray-200 rounded-lg ff-roboto m-5">
-                    <img src="/decor.png" alt="decor" />
-                    <h5 className="text-xl font-semibold mt-3 mb-3">Decor & Styling</h5>
-                    <p className="text-[#4B5563]">
-                        Final touches and accessories selection to bring
+                <ServiceCard
+                    service_image="/decor.png"
+                    service_name="Decor & Styling"
+                    service_description="Final touches and accessories selection to bring
                         your space to life, creating the perfect ambiance and
-                        atmosphere.
-                    </p>
-                </div>
-
-
+                        atmosphere."
+                />
             </div>
 
 
