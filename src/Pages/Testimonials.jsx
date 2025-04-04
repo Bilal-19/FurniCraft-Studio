@@ -5,6 +5,7 @@ import ReviewCard from "../Components/ReviewCard";
 import { customerReviewRecords } from "../assets/JS/customerReviews";
 import { useRef, useState } from "react"
 import StatisticCard from "../Components/StatisticCard";
+import {motion} from "framer-motion"
 
 export default function Testimonials() {
     const fileInputRef = useRef(null);
@@ -23,17 +24,23 @@ export default function Testimonials() {
             <Header />
 
             <div className="w-full flex flex-col-reverse md:flex-row items-center ff-roboto">
-                <div className="w-80 md:w-1/2 md:m-5">
+                <motion.div initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }} className="w-80 md:w-1/2 md:m-5">
                     <h2 className="text-2xl md:text-6xl font-medium mb-3">Real Stories from Real Customers</h2>
                     <p className="text-[#6B7280] text-md md:text-xl">
                         Discover how our furniture and interior design solutions have
                         transformed homes and lives. Read authentic experiences
                         shared by our valued customers.
                     </p>
-                </div>
-                <div className="w-80 md:w-1/2 my-3 md:m-5">
+                </motion.div>
+                <motion.div initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }} className="w-80 md:w-1/2 my-3 md:m-5">
                     <img src="testimonial-banner.png" alt="testimonial image" />
-                </div>
+                </motion.div>
             </div>
 
             <div className="w-full my-20 flex flex-col md:flex-row">

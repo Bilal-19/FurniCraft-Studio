@@ -1,9 +1,13 @@
 import React from "react";
+import {motion} from "framer-motion"
 
 export default function ReviewCard(props) {
     return (
         <>
-            <div className="w-80 md:w-1/3 ff-roboto border border-gray-300 p-5 rounded-md shadow-md mb-5 md:m-5 mx-auto">
+            <motion.div initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }} className="w-80 md:w-1/3 ff-roboto border border-gray-300 p-5 rounded-md shadow-md mb-5 md:m-5 mx-auto">
                 <div className="flex mb-5 items-center">
                     <div className="mr-2">
                         <img src={props.customerProfile} alt={props.customerName} />
@@ -29,7 +33,7 @@ export default function ReviewCard(props) {
                     {props.reviewMsg}
                 </p>
                 <img src={props.productImgPath} alt="" />
-            </div>
+            </motion.div>
         </>
     )
 }
