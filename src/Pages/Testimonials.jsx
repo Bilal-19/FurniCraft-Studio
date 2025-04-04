@@ -5,10 +5,13 @@ import ReviewCard from "../Components/ReviewCard";
 import { customerReviewRecords } from "../assets/JS/customerReviews";
 import { useRef, useState } from "react"
 import StatisticCard from "../Components/StatisticCard";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import {ToastContainer, toast} from "react-toastify"
 
 export default function Testimonials() {
     const fileInputRef = useRef(null);
+    const feedbackForm = useRef();
     const [photo, setPhoto] = useState("")
     const [rating, setStar] = useState(0)
 
@@ -17,6 +20,32 @@ export default function Testimonials() {
 
         if (fetchFileName) {
             setPhoto(fetchFileName.name)
+        }
+    }
+
+    const dispatchEmail = (event) => {
+        event.preventDefault();
+
+        const message = feedbackForm.current.message.value.trim();
+
+        if (!photo || rating == 0 || !message){
+            toast.error("Please fill all required fields");
+        } else {
+            emailjs.sendForm(
+                'service_v68nuzj',
+                'template_q84u7uy',
+                feedbackForm.current,
+                'RbqjL1PQb_rxrXkaz'
+            ).then(res => {
+                toast.success("Thank you for sharing valuable feedback.")
+
+                // Reset form fields
+                feedbackForm.current.reset()
+                setPhoto("");
+                setStar(0)
+            },(error)=>{
+                toast.info("Something went wrong.", error)
+            })
         }
     }
     return (
@@ -54,11 +83,11 @@ export default function Testimonials() {
             <div className="w-full my-20">
                 <div className="w-80 md:w-1/2 text-center mx-auto ff-roboto">
                     <h3 className="font-bold text-3xl mb-10">Share Your Story</h3>
-                    <form onClick={(e) => e.preventDefault}>
+                    <form onClick={(e) => e.preventDefault} ref={feedbackForm} onSubmit={dispatchEmail}>
                         <div className="flex flex-col mb-5">
                             <label htmlFor="photoEl" className="font-medium text-sm text-[#374151] mb-2">Upload Photos</label>
                             <div className="border-2 border-dotted border-gray-600 p-5 md:p-10">
-                                <input type="text" name="photos" id="photoEl" readOnly value={photo} placeholder="Upload a file" onClick={() => fileInputRef.current.click()} className="cursor-pointer focus:outline-none text-center text-sm" />
+                                <input type="text" required name="photos" id="photoEl" readOnly value={photo} placeholder="Upload a file" onClick={() => fileInputRef.current.click()} className="cursor-pointer focus:outline-none text-center text-sm" />
                                 <button onClick={() => fileInputRef.current.click()}></button>
                                 <input type="file" ref={fileInputRef} className="hidden" onChange={handleFileChange} />
                             </div>
@@ -71,6 +100,7 @@ export default function Testimonials() {
                                     <button key={star} onClick={(e) => { setStar(star); e.preventDefault(); }} className={`text-4xl ${star <= rating ? "text-yellow-400" : "text-gray-300"}`}>★</button>
                                 ))}
                             </div>
+                            <input type="hidden" name="rating" value={rating}/>
                         </div>
 
                         <div className="flex flex-col mb-5">
@@ -79,15 +109,16 @@ export default function Testimonials() {
                         </div>
 
                         <button className="bg-black w-full py-2 text-white rounded-md hover:cursor-pointer">Submit Review</button>
+                        <ToastContainer/>
                     </form>
                 </div>
             </div>
 
             <div className="w-full flex flex-col md:flex-row justify-around ff-roboto my-20">
-                <StatisticCard score="2,547" description="Total Reviews"/>
-                <StatisticCard score="4.8/5" description="Average Rating"/>
-                <StatisticCard score="98%" description="Customer Satisfaction"/>
-                <StatisticCard score="15,234" description="Customer Served"/>
+                <StatisticCard score="2,547" description="Total Reviews" />
+                <StatisticCard score="4.8/5" description="Average Rating" />
+                <StatisticCard score="98%" description="Customer Satisfaction" />
+                <StatisticCard score="15,234" description="Customer Served" />
             </div>
 
             <Footer />
