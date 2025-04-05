@@ -11,7 +11,7 @@ export default function Services() {
 
             <div className="relative w-full bg-[url(/service-banner.png)] h-60 md:h-115 bg-cover bg-no-repeat flex flex-col items-center justify-center text-center ff-roboto text-white">
                 <div class="absolute inset-0 bg-black/40"></div>
-                <div class="absolute">
+                <div class="absolute w-80 md:w-fit">
                     <h2 className="text-3xl md:text-5xl font-bold">Our Services</h2>
                     <p className="text-sm md:text-xl">
                         Transforming spaces into extraordinary living experiences
