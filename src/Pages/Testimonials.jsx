@@ -83,7 +83,7 @@ export default function Testimonials() {
             <div className="w-full my-20">
                 <div className="w-80 md:w-1/2 text-center mx-auto ff-roboto">
                     <h3 className="font-bold text-3xl mb-10">Share Your Story</h3>
-                    <form onClick={(e) => e.preventDefault} ref={feedbackForm} onSubmit={dispatchEmail}>
+                    <form ref={feedbackForm} onSubmit={dispatchEmail}>
                         <div className="flex flex-col mb-5">
                             <label htmlFor="photoEl" className="font-medium text-sm text-[#374151] mb-2">Upload Photos</label>
                             <div className="border-2 border-dotted border-gray-600 p-5 md:p-10">
