@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import ServiceCard from "../Components/ServiceCard";
+import { Link } from "react-router-dom";
 
 export default function Services() {
     return (
@@ -64,7 +65,7 @@ export default function Services() {
 
 
             <div class="w-full flex justify-center mt-20 mb-20">
-                <button className="bg-black text-white ff-roboto font-medium text-lg py-3 px-6 rounded hover:bg-black/90 hover:cursor-pointer">Book a Free Consultation</button>
+                <Link to="/contact" className="bg-black text-white ff-roboto font-medium text-lg py-3 px-6 rounded hover:bg-black/80 hover:cursor-pointer">Book a Free Consultation</Link>
             </div>
             <Footer />
         </>

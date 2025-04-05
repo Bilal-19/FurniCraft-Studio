@@ -59,11 +59,11 @@ export default function Contact() {
                             Experience our collection with a personal consultation from our design
                             experts.
                         </p>
-                        <button className="bg-black text-white px-3 py-2 rounded">Schedule Now</button>
+                        <a className="bg-black text-white px-3 py-2 rounded" href="#schedule-now">Schedule Now</a>
                     </div>
                 </div>
 
-                <div className="w-80 mx-auto md:w-1/2 bg-white border border-gray-200 p-5 rounded-md ff-roboto shadow-md">
+                <div className="w-80 mx-auto md:w-1/2 bg-white border border-gray-200 p-5 rounded-md ff-roboto shadow-md" id="schedule-now">
                     <h4 className="font-medium text-xl md:text-3xl text-center">Send Us a Message</h4>
 
                     <form ref={contactForm} onSubmit={submitContactForm}>
