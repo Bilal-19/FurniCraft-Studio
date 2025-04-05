@@ -23,7 +23,7 @@ export default function Contact() {
                 contactForm.current,
                 'RbqjL1PQb_rxrXkaz'
             ).then(res => {
-                toast.success("Thank you for sharing valuable feedback.")
+                toast.success("We've received your inquiry. Our team will contact you soon.")
                 // Reset form fields
                 contactForm.current.reset()
             }, (error) => {

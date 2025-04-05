@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import { motion } from "framer-motion";
@@ -6,6 +5,7 @@ import FeaturedCollectionCard from "../Components/FeaturedCollectionCard";
 import TrendingDesignCard from "../Components/TrendingDesignCard";
 import DesignInspirationCard from "../Components/DesignInspirationCard";
 import TopCustomerReview from "../Components/TopCustomerReview";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -23,10 +23,10 @@ export default function Home() {
                     <br />
                     Elevate Your Lifestyle
                 </motion.h2>
-                <button
+                <Link to="/products"
                     className="relative ff-roboto w-fit mx-auto py-3 px-5 mt-5 rounded-sm bg-black hover:bg-gray-800 hover:cursor-pointer text-md md:text-lg">
                     View Collections
-                </button>
+                </Link>
             </div>
 
             <div className="container-fluid bg-[#efefef] pt-10 pb-10 md:pt-15 md:pb-15">
@@ -39,7 +39,7 @@ export default function Home() {
                     Featured Collections
                 </motion.h3>
 
-                <div className="flex flex-col md:flex-row md:justify-around items-center mt-15 mb-15">
+                <div className="flex flex-col md:flex-row md:justify-around items-center mt-15 mb-15 space-y-5 md:space-y-0">
                     <FeaturedCollectionCard imagePath="/fc_sofa.png" altText="Sofa" initialBottomVal={50} />
                     <FeaturedCollectionCard imagePath="/fc_room.png" altText="Sofa" initialBottomVal={100} />
                     <FeaturedCollectionCard imagePath="/fc_dinning.png" altText="Sofa" initialBottomVal={150} />
@@ -106,8 +106,8 @@ export default function Home() {
                     Subscribe to receive exclusive offers, design tips, and inspiration for your home.
                 </p>
 
-                <form action="" className="mb-15 ff-roboto">
-                    <input type="text" placeholder="Enter your email" className="w-50 md:w-100 px-3 py-2 border border-gray-200 focus:outline-gray-300 bg-white mr-2" />
+                <form className="mb-15 ff-roboto" autoComplete="off" onSubmit={(e) => e.preventDefault()}>
+                    <input type="email" name="user_email" required placeholder="Enter your email" className="w-50 md:w-100 px-3 py-2 border border-gray-200 focus:outline-gray-300 bg-white mr-2" />
                     <button className="bg-black text-white px-8 py-2 hover:cursor-pointer">Subscribe</button>
                 </form>
             </div>
